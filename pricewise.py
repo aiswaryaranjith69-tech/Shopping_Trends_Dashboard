@@ -107,7 +107,8 @@ h3{
 col1, col2, col3 = st.columns([1,4,1])
 
 with col1:
-    st.image("pricewise_logo.png", width=150)
+    logo_path = os.path.join(os.getcwd(), "pricewise_logo.png")
+st.image(logo_path, width=150)
 
 with col2:
     st.markdown("""
